@@ -1,0 +1,47 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+//printf("%d\n",sizeof(arr)/sizeof(arr[0]))数组的个数。
+//a&&b（逻辑于）同真输出为1,逻辑或a||b,一真输出真1.
+//exp1?exp2:exp3(满足1取2,否则取3.)计算机存储的数是补码.u_int a(无符号整数)。
+#include <stdio.h>
+/*int test()
+{
+	static int a = 1;
+	a++;
+	printf("a=%d\n",a);
+}
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+        test();
+	    i++;
+	}	
+	return 0;*///引用全局变量的时候得进行引援声明,extern	
+/*}*///static修饰局部变量的时候,局部变量生命周期变长.修饰全局变量的时候,改变了局部周期的作用域.
+//32位指的是32根地址线.打印地址%p.int* p存储地址.*p解引用地址直接变为原数.
+//int main()
+//{
+//  int a = 10;
+//  int* p = &a;
+//  printf("%p\n", p);
+//  return 0;
+//}
+struct book
+{
+	char name[20];//c语言程序设计
+	short price;//55
+};
+int main()
+{
+	struct book b1 = { "c语言程序设计",55 };
+	printf("书名：%s\n", b1.name);
+	printf("价格：%d元\n", b1.price);
+	b1.price = 15;
+	printf("价格：%d元\n", b1.price);
+	struct book* pb = &b1;
+	printf("%s\n", (*pb).name);
+	printf("%d\n", pb->price);
+	return 0;//(.成员),->成员
+	/*strcpy(b1.name, "c++");*///改数组名应该用函数改,数值可以直接改b1.price = 15;头文件加个string.h(字符串操作).
+}
