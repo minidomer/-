@@ -1,0 +1,89 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 100)
+//	{
+//		if (i % 2 == 1)//除用的是%
+//			printf("%d ", i);
+//		i++;//判断过后需要变量+1.
+//	}	
+//			return 0;
+//
+//	
+//
+//}
+//1.判断一个数是不是奇数,输出1-100的奇数.
+//一.分支语句switch
+//结构switch(sth){
+//case 1; printf(); break;case是入口,break是出口.
+	//case 2; printf(); break;defualt;未出现入口.coutinue跳过本次循环,继续下次循环.
+//}sth必须是整形.
+//二.wihle循环,表达式符合一直循环,wihle(语句)
+//2.屏幕上打印1-10.
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 10)
+//	{
+//		printf("%d ", i);
+//		i++;
+//	}
+//	return 0;
+//}
+#include<string.h>
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch=getchar() )!= EOF)//EOF==end of file值是-1.
+//	{
+//		putchar(ch);//输入的字符是一个一个读的.ctrl+z可以结束.
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int password[20] = { 0 };
+//	int ch1=0;
+//	int ch3 = 0;
+//	int asd = 0;
+//	printf("请输入密码\n");
+//	scanf("%s", &password);
+//	
+//	while ((asd=getchar()) != '\n')//getchar(）表示接收一个字符,输入数据的时候是存放在寄存器里面的,读数时会把'\n'也读进去.
+//	{
+//		;//解决这类问题可以加个while循环,用读取的方法清空寄存器.
+//
+//	}
+//	printf("请确认Y/N\n");
+//	while ((ch1 = getchar()) != 'Y')
+//	{
+//		
+//			printf("确认失败\n");
+//			while ((asd = getchar()) != '\n')
+//			{
+//				;
+//			}
+//		
+//	}
+//	printf("确认成功\n");
+//		return 0;
+//
+//}
+//for循环
+//结构for(表达式1;表达式2;表达式3),表达式1是变量设定,表达式2是循环体，表达式3是调整变量.break在while跟for循环里面同样指跳出整个循环.
+//while里面加cuntinue循环的是前面的代码,for循环里面循环的是后面的代码.
+//int main()
+//{
+//	for (;;)
+//	{
+//		;
+//	};
+//	return 0;
+//}
+//do
+//{
+//;
+//}
+//while()
