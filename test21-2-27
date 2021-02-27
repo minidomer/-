@@ -1,0 +1,51 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+//int main()
+//{
+//	//for (;;)条件被省略了,恒为真,即死循环.
+//
+//
+//	return 0;
+//}
+//1.计算n的阶乘.
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int k = 1;
+//	scanf("%d", &n);
+//	for (i=1; i < n; i++)
+//	{
+//		k=k*i;
+//	}
+//	printf("%d",k);
+//	return 0;
+//}
+//2.计算1-6的阶乘之和.
+int main()
+{
+	int i = 0;
+	int j = 0;
+	int time = 0;
+	int num = 0;
+	int k = 1;
+	int decre = 0;
+	int decre1 = 0;
+	int sum = 0;
+	scanf("%d", &time);
+	while ((decre = getchar()) != '\n');
+	for (j = 1; j<=time ;j++)
+	{
+		scanf("%d", &num);
+		for (i=1,k=1; i<=num; i++)
+		{
+			k=k*i;
+		}
+		printf("%d\n", k);
+		while ((decre1 = getchar()) != '\n');
+		sum = sum + k;
+		printf("%d\n", sum);
+	}
+	return 0;
+}
