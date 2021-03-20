@@ -1,0 +1,21 @@
+1.调用函数
+#include<stdio.h>
+#include"add.h"	
+int main()
+{
+	int a = 5;
+	int b = 49;
+	int c = ADD(a, b);
+	printf("%d", c);
+	return 0;
+}
+add.h
+#ifndef __ADD_H__
+#define __ADD_H__
+int ADD(int x, int y);
+#endif
+add.c
+int ADD(int x,int y)
+{
+	return x + y;
+}
