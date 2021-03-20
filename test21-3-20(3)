@@ -1,0 +1,43 @@
+4.求n的阶乘
+#include<stdio.h>
+int Facl(int n)
+{
+	if (n <= 1)
+		return 1;
+	else
+		return n*Facl(n - 1);
+}
+int main()
+{
+	int b = 0;
+	int ret = 0;
+	scanf("%d", &b);
+	ret = Facl(b);
+	printf("%d", ret);
+	return 0;
+}
+5.求斐波那契数列.(用递归效率很低.)
+#include<stdio.h>
+int Fib(int n)
+{
+	int a = 1;
+	int b = 1;
+	int c = 1;
+	while (n>2)//如果加等于第五个等于8.
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
+}
+int main()
+{
+	int n = 0;
+	int ret = 0;
+	scanf("%d",&n);
+	ret = Fib(n);
+	printf("%d", ret);
+	return 0;
+}
